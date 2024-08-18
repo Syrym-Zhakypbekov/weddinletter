@@ -7,29 +7,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Background Music -->
+    <audio id="background-music" src="music.mp3" autoplay loop></audio>
+    
+    <!-- Invitation Content -->
+    <section class="invitation">
+        <div class="banner">
+            <img src="weddinggif.gif" alt="Үйлену баннері">
+            <button id="play-music" class="heart-button">Маған басыңыз</button>
+        </div>
 
-    <!-- Top Banner Section -->
-    <section id="top-banner" class="section">
-        <img src="weddinggif.gif" alt="Үйлену баннері">
-    </section>
+        <div class="content">
+            <h1>03.11.2024</h1>
+            <h2>Құрметті қонақтар!</h2>
+            <p>
+                Сіздерді балаларымыздың өміріндегі ең маңызды сәтті бірге сезінуге,
+                үйлену тойына арналған кешіміздің құрметті қонағы болуға шын ниетпен
+                шақырамыз!
+            </p>
+            <p class="time">Сағат: 17:00</p>
+            <p class="address">
+                Мекен-жайы: “Samruk Hall” мейрамханасы, Қонаев көшесі 13/1, ҚОНАЕВ қаласы
+            </p>
 
-    <!-- Invitation Content Sections -->
-    <section id="invitation" class="section">
-        <h1>Сізді шақырамыз!</h1>
-        <p>Дариға мен Ерденнің үйлену тойына қош келдіңіз!</p>
-    </section>
+            <div class="guest-form">
+                <h3>Қонақ анкетасы</h3>
+                <p>
+                    Тойға қатысуыңызды растауыңызды сұраймыз! Жауабын 10.10.2024 жылға дейін күтеміз.
+                </p>
+                <form>
+                    <label for="name">Сіздің аты жөніңіз</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="partner-name">Жұбайыңыздың есімі (егер тойға келетін болса)</label>
+                    <input type="text" id="partner-name" name="partner-name">
+                    <label for="attendance">Тойға келесіз бе?</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="yes">Ия</option>
+                        <option value="with-partner">Жұбайыммен келемін</option>
+                        <option value="no">Келмеймін</option>
+                    </select>
+                    <button type="submit">Жіберу</button>
+                </form>
+            </div>
 
-    <section id="details" class="section">
-        <h2>Үйлену тойы туралы мәліметтер</h2>
-        <p>Күні: 3 қараша</p>
-        <p>Уақыты: [Той уақыты]</p>
-        <p>Орны: [Той өтетін орын]</p>
-    </section>
+            <div class="countdown">
+                <p>Тойдың басталуына дейін</p>
+                <!-- Countdown timer logic will go here -->
+            </div>
 
-    <section id="rsvp" class="section">
-        <h2>RSVP</h2>
-        <p>Қатысатыныңызды растаңыз [RSVP күні]</p>
-        <button id="rsvp-button">Қатысамын деп белгілеңіз</button>
+            <p class="signature">Құрметпен той иелері: Бекен-Қарлығаш</p>
+        </div>
     </section>
 
     <script src="index.js"></script>
